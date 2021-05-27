@@ -1,0 +1,90 @@
+{% load static %}
+ h1{
+    color:red;
+    background color: blue;
+ }
+ .bk{
+    font-size: 2vh;
+ }
+ .a{
+   background-image: url("{% static 'Background-website-01.jpg' %}");
+  }
+  label{
+  display:inline;
+  }
+  label > h3{
+  display: inline;
+  }
+  input{
+  float:left;}
+ .b{
+    position : relative;
+
+    padding: 10px;
+    padding-left : 60px;
+    color: white;
+    background-color: #999999;
+    width: 100%;
+  }
+ .d{
+         padding-left: 25px;
+         position: relative;
+    }
+ .e{
+         position: relative;
+         padding : 20px;
+         width: 100%;
+         background-color: #cccccc;
+
+   }
+ .n{
+         border-bottom-style: solid;
+         border-color: red;
+         }
+ .tr:hover{
+          background-color: #85e0e0;
+         }
+ .c:hover{
+         background-color: #29a3a3;
+         }
+ .c:link{
+         color: white;
+         }
+.c{
+          float: left;
+          padding-right: 50px;
+          background-color: #33cccc;
+          color: white;
+          radius:25px;
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+}
+  #table{
+  margin-left: 60px;
+  border: 3px solid black;
+  border-radius: 50px;
+  }
+.form1,.form{
+padding-left: 40px;
+}
+#footer1{
+ position: absolute;
+ bottom: 75px;
+ width: 100%;
+ color:black;
+padding-left: 10px;
+}
+#footer{
+ position: absolute;
+ bottom: 5px;
+ width: 100%;
+ background-color: #ccccc9;
+padding-left: 10px;
+}

@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block title %}<title>New Registrations</title>{% endblock %}
+
+{% block body %}
+<h1 class="b">Covid Vacination Registration Portal</h1>
+<h2>New  Registraions  page</h2>
+
+
+<h1>Enter Personal Info.</h1>
+<div class="form1">
+    <form name="form" enctype="multipart/form-data" method="POST">
+        {% csrf_token %}
+        <div class="form-group" style="max-width:408px;">
+            <label for="usn"><h3>Name</h3></label>
+            <input id="name" class="form-control form-control-lg" type="text" name="Name" value="" required/>
+        </div>
+        <br>
+        <div class="form-group" style="max-width:408px;">
+            <label for="usn"><h3>Aadhar No.</h3></label>
+            <input id="Aadhar" class="form-control form-control-lg" type="text" name="Aadhar" value="" required/>
+        </div>
+        <br>
+        <div class="form-group" style="max-width:408px;">
+            <label for="s"><h3>Phone</h3></label>
+            <input id="s" class="form-control form-control-lg" type="text" name="Phone" value=""required/>
+        </div>
+        <br>
+        <div class="form-group" style="max-width:408px;">
+            <label for="sem"><h3>Dob</h3></label>
+            <input id="Dob" class="form-control form-control-lg" type="date" name="Dob" value="" required/>
+        </div>
+        <br>
+        <div class="form-group" style="max-width:408px;">
+            <label for="ph"><h3>PinCode</h3></label>
+            <input id="pin" class="form-control form-control-lg" type="text" name="PinCode" value="" required/>
+        </div>
+        <br>
+        <div class="form-group" style="max-width:408px;">
+            <label for="sem"><h3>Vaccination Date</h3></label>
+            <input id="VDate" class="form-control form-control-lg" type="date" name="VDate" value="" required/>
+        </div>
+        <br>
+        <div class="from-group" style="max-width: 408px;">
+            <label for="sem"><h3>Select Vaccination Solt </h3></label>
+            <select name="VSlot" id="VSlot" style="max-width: 408px;">
+                <option value="8:00am" selected>8:00am</option>
+                <option value="10:00am" >10:00am</option>
+                <option value="12:00pm" >12:00pm</option>
+                <option value="2:00pm" >2:00pm</option>
+                <option value="4:00pm">4:00pm</option>
+            </select>
+        </div>
+        <br>
+        <br>
+        <div class="submit">
+            <button class="btn btn-success" type="submit" name="button"><h2>Submit</h2></button>
+        </div>
+
+    </form>
+</div>
+
+<h1 class="a"></h1>
+
+
+</body>
+{% endblock %}

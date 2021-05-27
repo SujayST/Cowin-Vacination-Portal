@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}<title>home</title>{% endblock %}
+{% block body %}
+{% load static %}
+
+<h1 class="b" style="font-size: 20px; color: red;">WELCOME TO COVID VACCINATION PORTAL</h1>
+<h1 class="b">List of Confirmed Registraions :</h1>
+
+<h1 class="a"></h1>
+<div>
+    <table id="table" bgcolor=#dae0e0 cellpadding="15">
+        <tr bgcolor="white">
+            <th><h2>Registration_id</h2></th>
+            <th><h2>Name</h2></th>
+            <th><h2>Aadhar_No.</h2></th>
+            <th><h2>Phone_No.</h2></th>
+            <th><h2>DoB</h2></th>
+            <th><h2>PinCode</h2></th>
+            <th><h2>Vaccination Date</h2></th>
+            <th><h2>Vaccination Slot</h2></th>
+        </tr>
+
+        {% for obj in all_regs %}
+        <tr class="tr" align="center">
+            <td><h3 class="bk">{{ obj.Registration_id}}</h3>
+                <div class="n"></div>
+            </td>
+            <td><h3 class="bk">{{ obj.Name }}</h3></td>
+            <td><h3 class="bk">{{ obj.Aadhar}}</h3></td>
+            <td><h3 class="bk">{{ obj.Phone}}</h3></td>
+            <td><h3 class="bk">{{ obj.Dob}}</h3></td>
+            <td><h3 class="bk">{{ obj.PinCode}}</h3></td>
+            <td><h3 class="bk">{{ obj.VDate}}</h3></td>
+            <td><h3 class="bk">{{ obj.VSlot}}</h3></td>
+        </tr>
+
+        {% endfor %}
+    </table>
+</div>
+<h1 class="a"></h1>
+
+<p id="demo"></p>
+{% endblock %}
